@@ -2,6 +2,7 @@ package schedulingAlgorithms.nonPreemtive;
 
 import components.GanttChart;
 import components.ProcessItem;
+import components.Table;
 import models.Process;
 import schedulingAlgorithms.Scheduler;
 
@@ -44,7 +45,13 @@ public class FCFS implements Scheduler {
             }
         }
 
-        new GanttChart(processItems).build();
+        GanttChart ganttChart = new GanttChart(processItems);
+        ganttChart.build();
+
+        Table table = new Table(ganttChart, processes);
+        table.build();
+        table.printDetails();
+
 
     }
 }

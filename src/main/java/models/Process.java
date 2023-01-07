@@ -5,6 +5,8 @@ public class Process implements Comparable<Process> {
     protected int arrivalTime;
     protected int bustTime;
 
+    public Process() {}
+
     public Process(int ID, int arrivalTime, int bustTime) {
         this.ID = ID;
         this.arrivalTime = arrivalTime;
