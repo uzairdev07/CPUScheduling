@@ -2,12 +2,13 @@ import models.Process;
 import schedulingAlgorithms.nonPreemtive.FCFS;
 import schedulingAlgorithms.nonPreemtive.SJF;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Scanner input = new Scanner(System.in);
 
@@ -29,7 +30,7 @@ public class Main {
         }
 
         System.out.println("1. FCFS");
-        System.out.println("1. SJF");
+        System.out.println("2. SJF");
         System.out.printf("Choose Scheduling Algorithm -> ");
 
         int choice = input.nextInt();
@@ -40,6 +41,9 @@ public class Main {
         } else {
             new SJF(processes).schedule();
         }
+
+        System.out.println("\nPress any key to continue...");
+        System.in.read();
 
     }
 }

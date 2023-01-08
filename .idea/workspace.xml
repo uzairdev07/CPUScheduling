@@ -9,14 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a21a9624-ae9d-4bc0-9210-aade019046bb" name="Changes" comment="Add Support of Table">
-      <change afterPath="$PROJECT_DIR$/src/main/java/schedulingAlgorithms/nonPreemtive/SJF.java" afterDir="false" />
+    <list default="true" id="a21a9624-ae9d-4bc0-9210-aade019046bb" name="Changes" comment="SJF">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/SchedulingTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/SchedulingTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/schedulingAlgorithms/nonPreemtive/FCFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schedulingAlgorithms/nonPreemtive/FCFS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +80,7 @@
       <workItem from="1673062024111" duration="2824000" />
       <workItem from="1673068787964" duration="8397000" />
       <workItem from="1673093141821" duration="4542000" />
-      <workItem from="1673139431917" duration="3681000" />
+      <workItem from="1673139431917" duration="4748000" />
     </task>
     <task id="LOCAL-00001" summary="Add Support of Table">
       <created>1673076117535</created>
@@ -94,7 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673076117535</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FCFS Maintenance">
+      <created>1673143129591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673143129591</updated>
+    </task>
+    <task id="LOCAL-00003" summary="SJF">
+      <created>1673143293153</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673143293153</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +122,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Support of Table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Support of Table" />
+    <MESSAGE value="FCFS Maintenance" />
+    <MESSAGE value="SJF" />
+    <option name="LAST_COMMIT_MESSAGE" value="SJF" />
   </component>
 </project>
