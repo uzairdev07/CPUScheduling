@@ -14,23 +14,28 @@ public class FCFS implements Scheduler {
 
     public FCFS(List<Process> processes) {
         this.processes = processes;
-        Collections.sort(processes);
+        processes.sort(new Comparator<Process>() {
+            @Override
+            public int compare(Process o1, Process o2) {
+                if (o1.getArrivalTime() < o2.getArrivalTime()) return -1;
+                if (o1.getArrivalTime() == o2.getArrivalTime()) return 0;
+                return 1;
+            }
+        });
     }
 
     @Override
     public void schedule() {
-        Queue<Process> processQueue = new ArrayDeque<>();
         List<ProcessItem> processItems = new ArrayList<>();
 
         for (int i = 0; i < processes.size(); i++) {
             Process process = processes.get(i);
-            processQueue.add(process);
             if (i == 0) {
                 processItems.add(
                         new ProcessItem(
                                 "P" + process.getID(),
                                 process.getArrivalTime(),
-                                process.getBustTime()
+                                process.getBurstTime()
                         )
                 );
             } else {
@@ -39,7 +44,7 @@ public class FCFS implements Scheduler {
                         new ProcessItem(
                                 "P" + process.getID(),
                                 f,
-                                f + process.getBustTime()
+                                f + process.getBurstTime()
                         )
                 );
             }

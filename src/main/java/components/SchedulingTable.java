@@ -4,14 +4,16 @@ public class SchedulingTable {
     private String processName;
     private int arrivalTime;
     private int burstTime;
+    private int responseTime;
     private int finishTime;
     private int turnAroundTime;
     private int waitingTime;
 
-    public SchedulingTable(String processName, int arrivalTime, int burstTime, int finishTime, int turnAroundTime, int waitingTime) {
+    public SchedulingTable(String processName, int arrivalTime, int burstTime, int responseTime, int finishTime, int turnAroundTime, int waitingTime) {
         this.processName = processName;
         this.arrivalTime = arrivalTime;
         this.burstTime = burstTime;
+        this.responseTime = responseTime;
         this.finishTime = finishTime;
         this.turnAroundTime = turnAroundTime;
         this.waitingTime = waitingTime;
@@ -39,6 +41,14 @@ public class SchedulingTable {
 
     public void setBurstTime(int burstTime) {
         this.burstTime = burstTime;
+    }
+
+    public int getResponseTime() {
+        return responseTime;
+    }
+
+    public void setResponseTime(int responseTime) {
+        this.responseTime = responseTime;
     }
 
     public int getFinishTime() {

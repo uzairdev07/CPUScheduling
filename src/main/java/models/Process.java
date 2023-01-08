@@ -1,16 +1,16 @@
 package models;
 
-public class Process implements Comparable<Process> {
+public class Process {
     protected int ID;
     protected int arrivalTime;
-    protected int bustTime;
+    protected int burstTime;
 
     public Process() {}
 
     public Process(int ID, int arrivalTime, int bustTime) {
         this.ID = ID;
         this.arrivalTime = arrivalTime;
-        this.bustTime = bustTime;
+        this.burstTime = bustTime;
     }
 
     public int getID() {
@@ -29,25 +29,19 @@ public class Process implements Comparable<Process> {
         this.arrivalTime = arrivalTime;
     }
 
-    public int getBustTime() {
-        return bustTime;
+    public int getBurstTime() {
+        return burstTime;
     }
 
-    public void setBustTime(int bustTime) {
-        this.bustTime = bustTime;
+    public void setBurstTime(int burstTime) {
+        this.burstTime = burstTime;
     }
 
     @Override
     public String toString() {
         return "P" + ID +
                 ", A.T " + arrivalTime +
-                ", B.T " + bustTime + "\n";
+                ", B.T " + burstTime + "\n";
     }
 
-    @Override
-    public int compareTo(Process other) {
-        if (arrivalTime < other.arrivalTime) return -1;
-        if (arrivalTime == other.arrivalTime) return 0;
-        return 1;
-    }
 }

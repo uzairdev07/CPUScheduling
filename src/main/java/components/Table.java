@@ -30,10 +30,11 @@ public class Table {
                     new SchedulingTable(
                             "P" + process.getID(),
                             process.getArrivalTime(),
-                            process.getBustTime(),
+                            process.getBurstTime(),
+                            item.getStart(),
                             item.getFinish(),
                             item.getFinish() - process.getArrivalTime(),
-                            (item.getFinish() - process.getArrivalTime()) - process.getBustTime()
+                            (item.getFinish() - process.getArrivalTime()) - process.getBurstTime()
                     )
             );
             averageTurnAroundTime += schedulingTableList.get(i).getTurnAroundTime();
